@@ -1,0 +1,18 @@
+# Render deployment config
+# This file tells Render how to build and deploy the backend
+
+services:
+  - type: web
+    name: weito-ventures-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    plan: free
+    region: oregon
+
+    # Environment variables (configure in Render dashboard)
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false # Set this in Render dashboard for security
