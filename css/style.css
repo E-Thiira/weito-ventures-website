@@ -31,21 +31,23 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: #2E3192;
+  color: #2e3192;
   font-weight: bold;
   padding-bottom: 4px;
-  transition: border-color 0.3s ease, color 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .navbar a:hover,
 .navbar a.active {
-  border-bottom: 2px solid #F47C20;
-  color: #F47C20;
+  border-bottom: 2px solid #f47c20;
+  color: #f47c20;
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #2E3192, #1f1c7a);
+  background: linear-gradient(135deg, #2e3192, #1f1c7a);
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -65,7 +67,7 @@ body {
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
-  background: #F47C20;
+  background: #f47c20;
   color: white;
   padding: 0.8rem 1.5rem;
   text-decoration: none;
@@ -73,7 +75,10 @@ body {
   border: none;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
 }
 
 .btn:hover {
@@ -90,7 +95,7 @@ body {
 }
 
 .section h2 {
-  color: #2E3192;
+  color: #2e3192;
   margin-bottom: 1rem;
 }
 
@@ -112,9 +117,11 @@ body {
   background: white;
   padding: 1rem;
   margin-bottom: 1rem;
-  border-left: 4px solid #F47C20;
+  border-left: 4px solid #f47c20;
   border-radius: 4px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .services li:hover {
@@ -131,13 +138,15 @@ body {
   border: 1px solid #d1d5db;
   border-radius: 4px;
   font-size: 0.95rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #F47C20;
+  border-color: #f47c20;
   box-shadow: 0 0 8px rgba(244, 124, 32, 0.2);
 }
 
@@ -149,13 +158,13 @@ body {
 /* FOOTER */
 footer,
 .footer {
-  background: #2E3192;
+  background: #2e3192;
   color: white;
   text-align: center;
   padding: 1.5rem 2rem;
   margin-top: 2rem;
   font-size: 0.9rem;
-  border-top: 3px solid #F47C20;
+  border-top: 3px solid #f47c20;
 }
 
 /* SOCIAL LINKS */
@@ -171,7 +180,9 @@ footer,
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +191,7 @@ footer,
 }
 
 .social-links a:hover {
-  color: #F47C20;
+  color: #f47c20;
   transform: scale(1.2) rotate(5deg);
 }
 
@@ -271,7 +282,9 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -280,13 +293,13 @@ body {
 }
 
 .social-links a:hover {
-  color: #F47C20;
+  color: #f47c20;
   transform: scale(1.2) rotate(5deg);
 }
- 
+
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #2E3192, #1f1c7a);
+  background: linear-gradient(135deg, #2e3192, #1f1c7a);
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -306,7 +319,7 @@ body {
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
-  background: #F47C20;
+  background: #f47c20;
   color: white;
   padding: 0.8rem 1.5rem;
   text-decoration: none;
@@ -314,7 +327,10 @@ body {
   border: none;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
 }
 
 .btn:hover {
@@ -331,7 +347,7 @@ body {
 }
 
 .section h2 {
-  color: #2E3192;
+  color: #2e3192;
   margin-bottom: 1rem;
 }
 
@@ -353,9 +369,11 @@ body {
   background: white;
   padding: 1rem;
   margin-bottom: 1rem;
-  border-left: 4px solid #F47C20;
+  border-left: 4px solid #f47c20;
   border-radius: 4px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .services li:hover {
@@ -372,13 +390,15 @@ body {
   border: 1px solid #d1d5db;
   border-radius: 4px;
   font-size: 0.95rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #F47C20;
+  border-color: #f47c20;
   box-shadow: 0 0 8px rgba(244, 124, 32, 0.2);
 }
 
@@ -390,13 +410,13 @@ body {
 /* FOOTER */
 footer,
 .footer {
-  background: #2E3192;
+  background: #2e3192;
   color: white;
   text-align: center;
   padding: 1.5rem 2rem;
   margin-top: 2rem;
   font-size: 0.9rem;
-  border-top: 3px solid #F47C20;
+  border-top: 3px solid #f47c20;
 }
 
 /* MOBILE */
@@ -454,7 +474,7 @@ footer,
   footer,
   .footer {
     padding: 1.2rem 1rem;
-  }5rem;
+  }
 }
 
 .social-links a {
@@ -462,7 +482,9 @@ footer,
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -471,12 +493,12 @@ footer,
 }
 
 .social-links a:hover {
-  color: #F47C20;
-  transform: scale(1.2) rotate(5deg)old;
+  color: #f47c20;
+  transform: scale(1.2) rotate(5deg) old;
   font-size: 0.9rem;
 }
 
 .social-links a:hover {
   text-decoration: underline;
-  color: #F47C20;
+  color: #f47c20;
 }
