@@ -9,28 +9,49 @@
 <body>
 
 <nav class="navbar">
-  <img src="images/logo.png" class="logo">
+  <img src="images/logo.png" alt="Weito Ventures Logo" class="logo">
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="services.html">Services</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
   </ul>
 </nav>
 
 <section class="section">
   <h2>Contact Us</h2>
+  <p>
+    Have questions or need more information about our services?
+    Reach out to us and our team will get back to you.
+  </p>
+
   <form name="contact" method="POST" data-netlify="true" class="contact-form">
     <input type="hidden" name="form-name" value="contact">
+
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
     <button type="submit" class="btn">Send Message</button>
   </form>
 </section>
 
-<footer>
-  <p>© 2026 Weito Ventures.</p>
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2026 Weito Ventures. Your Reliable Partner.</p>
+
+    <div class="social-links">
+      <a href="https://www.tiktok.com/@weito.ventures?_r=1&_t=ZS-93mGs1HdfHQ" target="_blank">
+        TikTok
+      </a>
+      <a href="https://www.instagram.com/weitoventure?igsh=MTM5OGZjOHUzbzFpcA==" target="_blank">
+        Instagram
+      </a>
+      <a href="https://www.facebook.com/share/1DjwX7zmXz/" target="_blank">
+        Facebook
+      </a>
+    </div>
+  </div>
 </footer>
 
 </body>
