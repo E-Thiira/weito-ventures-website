@@ -283,10 +283,7 @@ body {
   color: #F47C20;
   transform: scale(1.2) rotate(5deg);
 }
-  border-bottom: 2px solid #F47C20;
-  color: #F47C20;
-}
-
+ 
 /* HERO */
 .hero {
   background: linear-gradient(135deg, #2E3192, #1f1c7a);
