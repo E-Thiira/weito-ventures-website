@@ -13,32 +13,33 @@ body {
 
 /* NAVBAR */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
 }
 
-.logo {
-  height: 50px;
-}
-
-.navbar ul {
+/* SOCIAL LINKS */
+.social-links {
+  margin-top: 0.8rem;
   display: flex;
-  list-style: none;
+  justify-content: center;
   gap: 1.5rem;
 }
 
-.navbar a {
+.social-links a {
+  color: #ffffff;
   text-decoration: none;
-  color: #2E3192;
   font-weight: bold;
-  padding-bottom: 4px;
-  transition: border-color 0.3s ease, color 0.3s ease;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.social-links a:hover {
+  color: #F47C20;
+  transform: scale(1.2) rotate(5deg);
+}
   border-bottom: 2px solid #F47C20;
   color: #F47C20;
 }
