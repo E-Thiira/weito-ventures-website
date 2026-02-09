@@ -28,14 +28,7 @@
         us and our team will get back to you.
       </p>
 
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        class="contact-form"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-
+      <form id="contactForm" class="contact-form">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea
@@ -44,8 +37,11 @@
           rows="5"
           required
         ></textarea>
-
         <button type="submit" class="btn">Send Message</button>
+        <div
+          id="contactMessage"
+          style="margin-top: 0.8rem; font-size: 0.95rem"
+        ></div>
       </form>
     </section>
 
@@ -78,5 +74,45 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // Contact form submission to backend /api/contact
+      (function () {
+        const form = document.getElementById("contactForm");
+        const msg = document.getElementById("contactMessage");
+        if (!form) return;
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          msg.textContent = "";
+          const formData = new FormData(form);
+          const payload = {
+            name: formData.get("name"),
+            email: formData.get("email"),
+            message: formData.get("message"),
+          };
+
+          try {
+            const res = await fetch("/api/contact", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload),
+            });
+            const data = await res.json();
+            if (res.ok) {
+              msg.style.color = "#10b981";
+              msg.textContent = data.message || "Message sent.";
+              form.reset();
+            } else {
+              msg.style.color = "#ef4444";
+              msg.textContent = data.error || "Submission failed.";
+            }
+          } catch (err) {
+            msg.style.color = "#ef4444";
+            msg.textContent = "Network error. Please try again.";
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
