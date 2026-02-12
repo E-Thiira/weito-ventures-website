@@ -373,3 +373,186 @@ footer,
     opacity: 1;
   }
 }
+/* TESTIMONIALS */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-avatar {
+  width: 60px;
+  height: 60px;
+  background: #2e3192;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 auto 1rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: #2e3192;
+  font-size: 0.9rem;
+}
+
+/* TRUST BADGES */
+.trust-badges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.trust-badge {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.trust-badge i {
+  font-size: 2.5rem;
+  color: #f47c20;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.trust-badge h4 {
+  color: #2e3192;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.trust-badge p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* FLOATING LABELS */
+.floating-form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  background: #f8f9fc;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #f47c20;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(244, 124, 32, 0.15);
+}
+
+.form-group label {
+  position: absolute;
+  top: 0.9rem;
+  left: 0.9rem;
+  color: #999;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  background: #f8f9fc;
+  padding: 0 0.3rem;
+}
+
+.form-group.focused label,
+.form-group input.has-value ~ label,
+.form-group textarea.has-value ~ label {
+  top: -0.6rem;
+  left: 0.6rem;
+  font-size: 0.8rem;
+  color: #f47c20;
+}
+
+/* SUCCESS MESSAGE */
+.success-message {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  padding: 1.5rem;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 1rem;
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.success-message i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.success-message p {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* LOADING ANIMATION */
+.btn.loading {
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* CONTACT PAGE BACKGROUND */
+.contact-section {
+  background: linear-gradient(135deg, #f8f9fc 0%, #eef1f8 100%);
+}
