@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Savings Accounts | Weito Ventures</title>
-    <meta name="description" content="Open a savings account with Weito Ventures. Secure banking solutions with competitive interest rates and flexible terms for individuals and businesses in Kenya." />
+    <meta
+      name="description"
+      content="Open a savings account with Weito Ventures. Secure banking solutions with competitive interest rates and flexible terms for individuals and businesses in Kenya."
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -188,7 +191,9 @@
         <div class="trust-badge">
           <i class="fas fa-shield-alt"></i>
           <h4>Secure & Protected</h4>
-          <p>Your savings are protected with industry-leading security measures.</p>
+          <p>
+            Your savings are protected with industry-leading security measures.
+          </p>
         </div>
         <div class="trust-badge">
           <i class="fas fa-chart-line"></i>
@@ -256,10 +261,18 @@
             >
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com/weitoventure" target="_blank" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/weitoventure"
+              target="_blank"
+              aria-label="Instagram"
+            >
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@weito.ventures" target="_blank" aria-label="TikTok">
+            <a
+              href="https://www.tiktok.com/@weito.ventures"
+              target="_blank"
+              aria-label="TikTok"
+            >
               <i class="fab fa-tiktok"></i>
             </a>
           </div>
@@ -275,5 +288,31 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Auto-hide navbar on scroll down (mobile only)
+      if (window.innerWidth <= 768) {
+        let lastScroll = 0;
+        const navbar = document.querySelector(".navbar");
+
+        window.addEventListener("scroll", () => {
+          const currentScroll = window.pageYOffset;
+
+          if (currentScroll <= 0) {
+            navbar.classList.remove("navbar-hidden");
+            return;
+          }
+
+          if (currentScroll > lastScroll && currentScroll > 80) {
+            // Scrolling down
+            navbar.classList.add("navbar-hidden");
+          } else {
+            // Scrolling up
+            navbar.classList.remove("navbar-hidden");
+          }
+
+          lastScroll = currentScroll;
+        });
+      }
+    </script>
   </body>
 </html>

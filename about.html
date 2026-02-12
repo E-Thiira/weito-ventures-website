@@ -266,5 +266,31 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Auto-hide navbar on scroll down (mobile only)
+      if (window.innerWidth <= 768) {
+        let lastScroll = 0;
+        const navbar = document.querySelector('.navbar');
+        
+        window.addEventListener('scroll', () => {
+          const currentScroll = window.pageYOffset;
+          
+          if (currentScroll <= 0) {
+            navbar.classList.remove('navbar-hidden');
+            return;
+          }
+          
+          if (currentScroll > lastScroll && currentScroll > 80) {
+            // Scrolling down
+            navbar.classList.add('navbar-hidden');
+          } else {
+            // Scrolling up
+            navbar.classList.remove('navbar-hidden');
+          }
+          
+          lastScroll = currentScroll;
+        });
+      }
+    </script>
   </body>
 </html>
