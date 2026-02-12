@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | Weito Ventures</title>
+    <meta name="description" content="Get in touch with Weito Ventures. Contact our team in Karatina, Kenya for microfinance solutions, loan applications, and account inquiries." />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -21,6 +22,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><a href="accounts.html">Accounts</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
@@ -58,8 +60,57 @@
       </div>
     </section>
 
-    <!-- RESPONSE TIME & HOURS -->
+    <!-- CONTACT FORM -->
     <section class="section section-soft">
+      <h2>Send Us a Message</h2>
+      <p class="security-notice">
+        <i class="fas fa-lock"></i> Your information is kept confidential and
+        secure.
+      </p>
+      <div class="contact-form-wrapper">
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a topic</option>
+                <option value="loan">Loan Application</option>
+                <option value="account">Account Inquiry</option>
+                <option value="support">Customer Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- RESPONSE TIME & HOURS -->
+    <section class="section section-light">
       <h2>Response Time & Office Hours</h2>
       <div class="response-grid">
         <div class="response-card">
@@ -87,7 +138,7 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="section section-light">
+    <section class="section section-soft">
       <h2>What Our Clients Say</h2>
       <div class="testimonials-grid">
         <div class="testimonial-card">
@@ -132,7 +183,17 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="accounts.html">Accounts</a></li>
             <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> venturesweito@gmail.com</li>
+            <li><i class="fas fa-phone"></i> 0782333777</li>
+            <li><i class="fas fa-map-marker-alt"></i> Karatina, Kenya</li>
           </ul>
         </div>
 
@@ -154,6 +215,11 @@
 
       <div class="footer-bottom">
         <p>© 2026 Weito Ventures. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms & Conditions</a>
+        </div>
       </div>
     </footer>
 
