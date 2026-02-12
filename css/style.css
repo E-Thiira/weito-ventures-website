@@ -15,8 +15,8 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #f8f9fc;
   line-height: 1.6;
+  background: linear-gradient(135deg, #f8f9fc 0%, #eef1f8 100%);
 }
 
 /* NAVBAR */
@@ -51,9 +51,11 @@ body {
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, var(--primary), #1f1c7a);
-  color: #fff;
-  padding: 4rem 2rem;
+  background:
+    linear-gradient(rgba(46, 49, 146, 0.85), rgba(46, 49, 146, 0.85)),
+    url("images/finance-bg.jpg") center/cover no-repeat;
+  color: #ffffff;
+  padding: 5rem 2rem;
   text-align: center;
 }
 .hero h1 {
@@ -99,7 +101,7 @@ body {
   margin-bottom: 1rem;
 }
 .light {
-  background: #f8fafc;
+  background: #ffffff url("images/pattern-light.png") repeat;
 }
 
 /* SERVICES */
