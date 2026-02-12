@@ -238,3 +238,37 @@ footer,
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
 }
+
+/* CARD GRID */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  border-top: 4px solid #f47c20;
+}
+
+.card h3 {
+  color: #2e3192;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
