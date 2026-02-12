@@ -272,3 +272,34 @@ footer,
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
+
+/* FAQ */
+.faq-container {
+  max-width: 800px;
+  margin: 2rem auto 0;
+}
+
+.faq-item {
+  background: #ffffff;
+  margin-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.faq-item summary {
+  font-weight: 600;
+  color: #2e3192;
+  font-size: 1rem;
+  outline: none;
+}
+
+.faq-item p {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.faq-item[open] {
+  border-left: 4px solid #f47c20;
+}
