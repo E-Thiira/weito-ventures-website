@@ -300,6 +300,15 @@ footer,
   white-space: nowrap;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.btn-center {
+  text-align: center;
+  margin-top: 2rem;
+}
+
 /* CARD GRID */
 .card-grid {
   display: grid;
