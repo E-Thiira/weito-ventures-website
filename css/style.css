@@ -51,9 +51,7 @@ body {
 
 /* HERO */
 .hero {
-  background:
-    linear-gradient(rgba(46, 49, 146, 0.85), rgba(46, 49, 146, 0.85)),
-    url("images/finance-bg.jpg") center/cover no-repeat;
+  background: linear-gradient(135deg, #2e3192 0%, #1f1c7a 100%);
   color: #ffffff;
   padding: 5rem 2rem;
   text-align: center;
@@ -101,7 +99,7 @@ body {
   margin-bottom: 1rem;
 }
 .light {
-  background: #ffffff url("images/pattern-light.png") repeat;
+  background: #ffffff;
 }
 
 /* SERVICES */
