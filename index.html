@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weito Ventures - Accessible Microfinance Solutions in Kenya</title>
-    <meta name="description" content="Weito Ventures provides transparent, flexible microfinance solutions for small businesses and entrepreneurs across Kenya. Fast approval, fair rates, and dedicated support." />
+    <meta
+      name="description"
+      content="Weito Ventures provides transparent, flexible microfinance solutions for small businesses and entrepreneurs across Kenya. Fast approval, fair rates, and dedicated support."
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -117,8 +120,8 @@
           <div class="process-number">2</div>
           <h3>Review</h3>
           <p>
-            Our team reviews your application within 24-48 hours. We assess
-            your needs and determine the best solution for you.
+            Our team reviews your application within 24-48 hours. We assess your
+            needs and determine the best solution for you.
           </p>
         </div>
         <div class="process-card">
@@ -222,30 +225,33 @@
     <!-- TESTIMONIALS -->
     <section class="section section-soft">
       <h2>What Our Clients Say</h2>
+      <p class="section-intro">
+        Hadithi halisi kutoka kwa wateja wetu kote Kenya.
+      </p>
       <div class="testimonials-grid">
         <div class="testimonial-card">
-          <div class="testimonial-avatar">AK</div>
+          <div class="testimonial-avatar">NM</div>
           <p class="testimonial-text">
-            "Weito Ventures transformed my business with quick, transparent
-            financing. Highly recommend!"
+            "Nilipata mkopo wangu haraka sana na masharti yalikuwa wazi. Weito
+            Ventures walinisaidia kukuza biashara yangu."
           </p>
-          <p class="testimonial-author">— Amara K., Business Owner</p>
+          <p class="testimonial-author">— Njeri M.</p>
         </div>
         <div class="testimonial-card">
-          <div class="testimonial-avatar">JM</div>
+          <div class="testimonial-avatar">PK</div>
           <p class="testimonial-text">
-            "The fastest approval process I've experienced. Their team is
-            professional and supportive."
+            "Huduma yao ni ya haraka na ya kuaminika. Ndani ya masaa machache
+            nilikuwa nimepata majibu."
           </p>
-          <p class="testimonial-author">— James M., Entrepreneur</p>
+          <p class="testimonial-author">— Peter K.</p>
         </div>
         <div class="testimonial-card">
-          <div class="testimonial-avatar">SP</div>
+          <div class="testimonial-avatar">AW</div>
           <p class="testimonial-text">
-            "Fair terms, no hidden fees. Weito Ventures truly cares about their
-            borrowers' success."
+            "Nimekuwa nikifanya kazi na Weito Ventures kwa muda sasa na
+            nawashukuru kwa msaada wao wa kifedha."
           </p>
-          <p class="testimonial-author">— Sarah P., Startup Founder</p>
+          <p class="testimonial-author">— Amina W.</p>
         </div>
       </div>
     </section>
@@ -314,10 +320,18 @@
             >
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com/weitoventure" target="_blank" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/weitoventure"
+              target="_blank"
+              aria-label="Instagram"
+            >
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.tiktok.com/@weito.ventures" target="_blank" aria-label="TikTok">
+            <a
+              href="https://www.tiktok.com/@weito.ventures"
+              target="_blank"
+              aria-label="TikTok"
+            >
               <i class="fab fa-tiktok"></i>
             </a>
           </div>
@@ -337,24 +351,24 @@
       // Auto-hide navbar on scroll down (mobile only)
       if (window.innerWidth <= 768) {
         let lastScroll = 0;
-        const navbar = document.querySelector('.navbar');
-        
-        window.addEventListener('scroll', () => {
+        const navbar = document.querySelector(".navbar");
+
+        window.addEventListener("scroll", () => {
           const currentScroll = window.pageYOffset;
-          
+
           if (currentScroll <= 0) {
-            navbar.classList.remove('navbar-hidden');
+            navbar.classList.remove("navbar-hidden");
             return;
           }
-          
+
           if (currentScroll > lastScroll && currentScroll > 80) {
             // Scrolling down
-            navbar.classList.add('navbar-hidden');
+            navbar.classList.add("navbar-hidden");
           } else {
             // Scrolling up
-            navbar.classList.remove('navbar-hidden');
+            navbar.classList.remove("navbar-hidden");
           }
-          
+
           lastScroll = currentScroll;
         });
       }

@@ -515,6 +515,8 @@ footer,
   font-style: italic;
   color: #555;
   margin-bottom: 1rem;
+  line-height: 1.7;
+  font-size: 0.98rem;
 }
 
 .testimonial-author {
@@ -981,6 +983,13 @@ footer,
   padding: 1.2rem 1.5rem;
   border-bottom: 1px solid #e0e0e0;
   color: #333;
+  vertical-align: top;
+}
+
+.loan-table td:first-child {
+  width: 45%;
+  color: #2e3192;
+  font-weight: 600;
 }
 
 .loan-table tbody tr:hover {
