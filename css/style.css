@@ -63,9 +63,6 @@ p {
   width: auto;
   display: block;
   object-fit: contain;
-  background-color: #333333;
-  padding: 5px 12px;
-  border-radius: 4px;
 }
 .navbar ul {
   display: flex;
