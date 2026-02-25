@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | Weito Ventures</title>
-    <meta name="description" content="Get in touch with Weito Ventures. Contact our team in Karatina, Kenya for microfinance solutions, loan applications, and account inquiries." />
+    <meta
+      name="description"
+      content="Get in touch with Weito Ventures. Contact our team in Karatina, Kenya for microfinance solutions, loan applications, and account inquiries."
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -14,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
   </head>
   <body>
     <nav class="navbar">
@@ -76,17 +80,35 @@
           <div class="form-row">
             <div class="form-group">
               <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your.email@example.com"
+                required
+              />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="0712345678" required />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="0712345678"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="subject">Subject</label>
@@ -152,7 +174,8 @@
         <div class="testimonial-card">
           <div class="testimonial-avatar">NM</div>
           <p class="testimonial-text">
-            "Nilipata mkopo wangu haraka sana na masharti yalikuwa wazi. Weito Ventures walinisaidia kukuza biashara yangu."
+            "Nilipata mkopo wangu haraka sana na masharti yalikuwa wazi. Weito
+            Ventures walinisaidia kukuza biashara yangu."
           </p>
           <p class="testimonial-author">— Njeri M.</p>
         </div>
@@ -160,7 +183,8 @@
         <div class="testimonial-card">
           <div class="testimonial-avatar">PK</div>
           <p class="testimonial-text">
-            "The service was fast and reliable. I received feedback within a few hours and the process was straightforward."
+            "The service was fast and reliable. I received feedback within a few
+            hours and the process was straightforward."
           </p>
           <p class="testimonial-author">— Peter K.</p>
         </div>
@@ -168,7 +192,8 @@
         <div class="testimonial-card">
           <div class="testimonial-avatar">AW</div>
           <p class="testimonial-text">
-            "Nimekuwa nikifanya kazi na Weito Ventures kwa muda sasa na nawashukuru kwa msaada wao wa kifedha."
+            "Nimekuwa nikifanya kazi na Weito Ventures kwa muda sasa na
+            nawashukuru kwa msaada wao wa kifedha."
           </p>
           <p class="testimonial-author">— Amina W.</p>
         </div>
@@ -205,7 +230,10 @@
         <div class="footer-social">
           <h4>Connect With Us</h4>
           <div class="socials">
-            <a href="https://www.facebook.com/share/1DjwX7zmXz/" target="_blank">
+            <a
+              href="https://www.facebook.com/share/1DjwX7zmXz/"
+              target="_blank"
+            >
               <i class="fab fa-facebook-f"></i>
             </a>
             <a href="https://www.instagram.com/weitoventure" target="_blank">
@@ -231,24 +259,24 @@
       // Auto-hide navbar on scroll down (mobile only)
       if (window.innerWidth <= 768) {
         let lastScroll = 0;
-        const navbar = document.querySelector('.navbar');
-        
-        window.addEventListener('scroll', () => {
+        const navbar = document.querySelector(".navbar");
+
+        window.addEventListener("scroll", () => {
           const currentScroll = window.pageYOffset;
-          
+
           if (currentScroll <= 0) {
-            navbar.classList.remove('navbar-hidden');
+            navbar.classList.remove("navbar-hidden");
             return;
           }
-          
+
           if (currentScroll > lastScroll && currentScroll > 80) {
             // Scrolling down
-            navbar.classList.add('navbar-hidden');
+            navbar.classList.add("navbar-hidden");
           } else {
             // Scrolling up
-            navbar.classList.remove('navbar-hidden');
+            navbar.classList.remove("navbar-hidden");
           }
-          
+
           lastScroll = currentScroll;
         });
       }

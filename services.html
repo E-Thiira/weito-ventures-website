@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Services | Weito Ventures</title>
-    <meta name="description" content="Explore Weito Ventures microfinance services: business loans, personal loans, education financing, agricultural loans, and group lending with flexible repayment terms." />
+    <meta
+      name="description"
+      content="Explore Weito Ventures microfinance services: business loans, personal loans, education financing, agricultural loans, and group lending with flexible repayment terms."
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -14,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
   </head>
   <body>
     <nav class="navbar">
@@ -277,17 +281,17 @@
           <i class="fas fa-percentage"></i>
           <h3>Competitive Interest Rates</h3>
           <p>
-            Our rates range from 10-20% per annum, depending on the loan type and
-            your eligibility. We keep rates fair and transparent with no hidden
-            charges.
+            Our rates range from 10-20% per annum, depending on the loan type
+            and your eligibility. We keep rates fair and transparent with no
+            hidden charges.
           </p>
         </div>
         <div class="feature-card">
           <i class="fas fa-calendar-check"></i>
           <h3>Flexible Terms</h3>
           <p>
-            Choose repayment periods from 3 to 84 months. We work with you to find
-            a schedule that matches your cash flow and income patterns.
+            Choose repayment periods from 3 to 84 months. We work with you to
+            find a schedule that matches your cash flow and income patterns.
           </p>
         </div>
         <div class="feature-card">
@@ -310,16 +314,16 @@
           <i class="fas fa-undo"></i>
           <h3>Early Repayment Option</h3>
           <p>
-            Pay off your loan early without penalties. Save on interest and improve
-            your credit profile for future borrowing opportunities.
+            Pay off your loan early without penalties. Save on interest and
+            improve your credit profile for future borrowing opportunities.
           </p>
         </div>
         <div class="feature-card">
           <i class="fas fa-life-ring"></i>
           <h3>Ongoing Support</h3>
           <p>
-            Get free financial literacy training and business mentorship throughout
-            your loan period. We're invested in your success.
+            Get free financial literacy training and business mentorship
+            throughout your loan period. We're invested in your success.
           </p>
         </div>
       </div>
@@ -347,7 +351,8 @@
         <div class="testimonial-card">
           <div class="testimonial-avatar">NM</div>
           <p class="testimonial-text">
-            "Nilipata mkopo wangu haraka sana na masharti yalikuwa wazi. Weito Ventures walinisaidia kukuza biashara yangu."
+            "Nilipata mkopo wangu haraka sana na masharti yalikuwa wazi. Weito
+            Ventures walinisaidia kukuza biashara yangu."
           </p>
           <p class="testimonial-author">— Njeri M.</p>
         </div>
@@ -355,7 +360,8 @@
         <div class="testimonial-card">
           <div class="testimonial-avatar">PK</div>
           <p class="testimonial-text">
-            "The service was fast and reliable. I received feedback within a few hours and the process was straightforward."
+            "The service was fast and reliable. I received feedback within a few
+            hours and the process was straightforward."
           </p>
           <p class="testimonial-author">— Peter K.</p>
         </div>
@@ -363,7 +369,8 @@
         <div class="testimonial-card">
           <div class="testimonial-avatar">AW</div>
           <p class="testimonial-text">
-            "Nimekuwa nikifanya kazi na Weito Ventures kwa muda sasa na nawashukuru kwa msaada wao wa kifedha."
+            "Nimekuwa nikifanya kazi na Weito Ventures kwa muda sasa na
+            nawashukuru kwa msaada wao wa kifedha."
           </p>
           <p class="testimonial-author">— Amina W.</p>
         </div>
@@ -400,7 +407,10 @@
         <div class="footer-social">
           <h4>Connect With Us</h4>
           <div class="socials">
-            <a href="https://www.facebook.com/share/1DjwX7zmXz/" target="_blank">
+            <a
+              href="https://www.facebook.com/share/1DjwX7zmXz/"
+              target="_blank"
+            >
               <i class="fab fa-facebook-f"></i>
             </a>
             <a href="https://www.instagram.com/weitoventure" target="_blank">
@@ -426,24 +436,24 @@
       // Auto-hide navbar on scroll down (mobile only)
       if (window.innerWidth <= 768) {
         let lastScroll = 0;
-        const navbar = document.querySelector('.navbar');
-        
-        window.addEventListener('scroll', () => {
+        const navbar = document.querySelector(".navbar");
+
+        window.addEventListener("scroll", () => {
           const currentScroll = window.pageYOffset;
-          
+
           if (currentScroll <= 0) {
-            navbar.classList.remove('navbar-hidden');
+            navbar.classList.remove("navbar-hidden");
             return;
           }
-          
+
           if (currentScroll > lastScroll && currentScroll > 80) {
             // Scrolling down
-            navbar.classList.add('navbar-hidden');
+            navbar.classList.add("navbar-hidden");
           } else {
             // Scrolling up
-            navbar.classList.remove('navbar-hidden');
+            navbar.classList.remove("navbar-hidden");
           }
-          
+
           lastScroll = currentScroll;
         });
       }
